@@ -1,19 +1,28 @@
-body{
+body {
     background-color: rgb(178, 255, 106);
 }
 
 #dad {
+    position: relative;
     animation-name: shrinkgrow;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    
- }   
 
- @keyframes shrinkgrow {
-    from {height: 10px;}
-    to {height: 1000px;}
- }
+}
 
+@keyframes shrinkgrow {
+    0% {
+        height: 100px;
+        transform: rotate(0deg);
+    }
 
+    50% {
+        height: 500px;
+        transform: rotate(180deg);
+    }
 
-
+    100% {
+        height: 100px;
+        transform: rotate(360deg);
+    }
+}
